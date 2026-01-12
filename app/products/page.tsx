@@ -43,6 +43,7 @@ export default function ProductsPage() {
       </div>
     )
   }
+console.log(products);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -72,7 +73,7 @@ export default function ProductsPage() {
 
         {products.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product) => (
+            {/* {products.map((product) => (
               <Link key={product.id} href={`/products/${product.id}`}>
                 <div className="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden cursor-pointer h-full">
                   {product.image && (
@@ -88,7 +89,23 @@ export default function ProductsPage() {
                   </div>
                 </div>
               </Link>
-            ))}
+            ))} */}
+            {Array.isArray(products) &&
+  products.map(item => (
+    <div>
+
+    <p key={item.id}>
+      hello
+    </p>
+      <div className="p-4">
+                    <h2 className="text-lg font-semibold text-gray-900 line-clamp-2">{item.productName}</h2>
+                    <p className="text-xl font-bold text-blue-600 mt-2">${item.price}</p>
+                  </div>
+    </div>
+    
+))}
+
+
           </div>
         ) : (
           <div className="bg-white rounded-lg shadow p-8 text-center">

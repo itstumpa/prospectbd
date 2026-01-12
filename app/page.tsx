@@ -98,6 +98,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {categories.map((category) => (
                 <div
+                
                   key={category.id}
                   className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition cursor-pointer"
                 >
