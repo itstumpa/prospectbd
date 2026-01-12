@@ -111,7 +111,7 @@ export default function ProductDetailsPage() {
             )}
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-4">{product.name}</h1>
-              <p className="text-4xl font-bold text-blue-600 mb-6">${product.price.toFixed(2)}</p>
+              <p className="text-4xl font-bold text-blue-600 mb-6">${product.price}</p>
               <p className="text-gray-700 text-lg leading-relaxed mb-8">{product.description}</p>
               <div className="flex gap-4">
                 <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-semibold">

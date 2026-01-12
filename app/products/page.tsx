@@ -84,7 +84,7 @@ export default function ProductsPage() {
                   )}
                   <div className="p-4">
                     <h2 className="text-lg font-semibold text-gray-900 line-clamp-2">{product.name}</h2>
-                    <p className="text-xl font-bold text-blue-600 mt-2">${product.price.toFixed(2)}</p>
+                    <p className="text-xl font-bold text-blue-600 mt-2">${product.price}</p>
                   </div>
                 </div>
               </Link>
