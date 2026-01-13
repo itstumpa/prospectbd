@@ -1,4 +1,4 @@
-# 🛒 NextShop - E-Commerce Homepage
+# 🛒 NextShop - E-Commerce
 
 Modern, responsive e-commerce homepage with clean design and robust error handling.
 
